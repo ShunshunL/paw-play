@@ -1,0 +1,32 @@
+.custom-button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: #89bad4;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #65a3c4;
+    color: white;
+    border: 1px solid #214457;
+  }
+
+  &.google {
+    background-color: #b29ed9;
+    color: white;
+
+    &:hover {
+      background-color: #9477cb;
+      border: 1px solid #472e77;
+    }
+  }
+}
