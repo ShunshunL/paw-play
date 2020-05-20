@@ -4,11 +4,16 @@ const selectCart = state => state.cart
 
 
 export const selectItems = createSelector(
-  [selectCart],
+  selectCart,
   cart => cart.cartItems
 )
 
+export const selectHidden = createSelector(
+  selectCart,
+  cart => cart.hidden
+)
+
 export const itemCount = createSelector(
-  [selectItems],
+  selectItems,
   cartItems => cartItems.reduce((all, item) => all + item.count, 0)
 )
