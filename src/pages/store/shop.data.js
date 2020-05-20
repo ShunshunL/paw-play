@@ -10,14 +10,12 @@ const SHOP_DATA = [
         id: 1,
         name: 'Scooter',
         imageUrl: 'https://images.unsplash.com/photo-1575425186775-b8de9a427e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
-        // imageUrl: "/images/shop-img/hats/brown-brim.png",
         price: 20
       },
       {
         id: 2,
         name: 'Winston',
         imageUrl: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=960&q=80',
-        // imageUrl: "/images/shop-img/hats/blue-beanie.png",
         price: 35
       },
       {
@@ -59,14 +57,12 @@ const SHOP_DATA = [
         id: 8,
         name: 'Izzy',
         imageUrl: 'https://images.unsplash.com/photo-1517423738875-5ce310acd3da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1305&q=80',
-        // imageUrl: "/images/shop-img/hats/wolf-cap.png",
         price: 33
       },
       {
         id: 9,
         name: 'Heidi',
         imageUrl: 'https://images.unsplash.com/photo-1469982866068-278880140412?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80',
-        // imageUrl: "/images/shop-img/hats/blue-snapback.png",
         price: 42
       }
     ]
@@ -180,37 +176,38 @@ const SHOP_DATA = [
   },
   {
     id: 4,
-    title: 'Womens',
-    routeName: 'womens',
+    title: 'Cats',
+    routeName: 'cats',
     items: [
       {
         id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+        name: 'Fluffy',
+        imageUrl: 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80',
         // imageUrl: "/images/shop-img/womens/blue-tank.png",
-        price: 25
+        price: 35
       },
       {
         id: 24,
-        name: 'Floral Blouse',
-        imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
+        name: 'Leo',
+        imageUrl: 'https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1563&q=80',
         // imageUrl: "/images/shop-img/womens/floral-blouse.png",
-        price: 20
+        price: 45
       },
       {
         id: 25,
-        name: 'Floral Dress',
-        imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
+        name: 'Milo',
+        imageUrl: 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1558&q=80',
         // imageUrl: "/images/shop-img/womens/floral-skirt.png",
-        price: 80
+        price: 75
       },
       {
         id: 26,
-        name: 'Red Dots Dress',
-        imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
+        name: 'Mittens',
+        imageUrl: 'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1576&q=80',
         // imageUrl: "/images/shop-img/womens/red-polka-dot-dress.png",
-        price: 80
+        price: 38
       },
+      // start here
       {
         id: 27,
         name: 'Striped Sweater',
@@ -236,37 +233,38 @@ const SHOP_DATA = [
   },
   {
     id: 5,
-    title: 'Mens',
-    routeName: 'mens',
+    title: 'Angry Cats',
+    routeName: 'angry-cats',
     items: [
       {
         id: 30,
-        name: 'Camo Down Vest',
-        imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
+        name: 'Loki',
+        imageUrl: 'https://images.unsplash.com/photo-1513245543132-31f507417b26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80',
         // imageUrl: "/images/shop-img/mens/camo-vest.png",
-        price: 325
+        price: 29
       },
       {
         id: 31,
-        name: 'Floral T-shirt',
-        imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
+        name: 'Cupcake',
+        imageUrl: 'https://images.unsplash.com/photo-1533738699159-d0c68059bb61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80',
         // imageUrl: "/images/shop-img/mens/floral-shirt.png",
-        price: 20
+        price: 55
       },
       {
         id: 32,
-        name: 'Black & White Longsleeve',
-        imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
+        name: 'Boots',
+        imageUrl: 'https://images.unsplash.com/photo-1552933529-e359b2477252?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=2550&q=80',
         // imageUrl: "/images/shop-img/mens/long-sleeve.png",
-        price: 25
+      price: 53
       },
       {
         id: 33,
-        name: 'Pink T-shirt',
-        imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
+        name: 'Lola',
+        imageUrl: 'https://images.unsplash.com/photo-1552826061-8a2c1201b40b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80',
         // imageUrl: "/images/shop-img/mens/pink-shirt.png",
-        price: 25
+        price: 39
       },
+      // start here
       {
         id: 34,
         name: 'Jean Long Sleeve',
