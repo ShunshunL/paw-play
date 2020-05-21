@@ -13,3 +13,8 @@ export const removeItem = item => ({
   type: CardTypes.REMOVE_ITEM,
   payload: item 
 })
+
+export const removeAndDecreaseCount = item => ({
+  type: CardTypes.REMOVE_AND_DECREASE_COUNT,
+  payload: item
+})

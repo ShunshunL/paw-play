@@ -233,7 +233,7 @@ const SHOP_DATA = [
   },
   {
     id: 5,
-    title: 'Angry Cats',
+    title: 'Funny Cats',
     routeName: 'angry-cats',
     items: [
       {

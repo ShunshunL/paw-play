@@ -9,3 +9,13 @@ export const addItemToCart = (cartItems, item) => {
 
   return [...cartItems, {...item, count: 1}]
 }
+
+export const removeItemAndDecreaseCount = (cartItems, itemToRemove) => {
+  const findItemToRemove = cartItems.find(item => item.id === itemToRemove.id)
+  if(findItemToRemove.count === 1) {
+    return cartItems.filter(item => item.id !== itemToRemove.id)
+  } 
+  return cartItems.map(
+    item => item.id === itemToRemove.id ? {...item, count: item.count - 1} : item
+  )
+}

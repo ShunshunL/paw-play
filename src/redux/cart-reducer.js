@@ -1,5 +1,5 @@
 import CardActions from './cart-types'
-import {addItemToCart} from './utils'
+import {addItemToCart, removeItemAndDecreaseCount} from './utils'
 
 const INITIAL_STATE = {
   hidden: true,
@@ -22,6 +22,11 @@ const cartReducer = (state=INITIAL_STATE, action) => {
       return {
         ...state,
         cartItems: state.cartItems.filter(item => item.id !== action.payload.id)
+      }
+    case CardActions.REMOVE_AND_DECREASE_COUNT:
+      return {
+        ...state,
+        cartItems: removeItemAndDecreaseCount(state.cartItems, action.payload)
       }
     default: 
       return state
