@@ -12,8 +12,8 @@ export const addItemToCart = (cartItems, item) => {
 
 export const removeItemAndDecreaseCount = (cartItems, itemToRemove) => {
   const findItemToRemove = cartItems.find(item => item.id === itemToRemove.id)
-  if(findItemToRemove.count === 1) {
-    return cartItems.filter(item => item.id !== itemToRemove.id)
+  if(findItemToRemove.count === 0) {
+    return cartItems
   } 
   return cartItems.map(
     item => item.id === itemToRemove.id ? {...item, count: item.count - 1} : item

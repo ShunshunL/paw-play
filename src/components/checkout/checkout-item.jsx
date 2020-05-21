@@ -5,6 +5,11 @@ import './checkout-item.scss'
 
 const PetInCheckout = ({item, removeItem, addItem, removeAndDecreaseCount}) => {
   const {name, imageUrl, price, count} = item
+  let arrowLeft = '', zeroCount= ''
+  if (count === 0) {
+    arrowLeft = 'arrow-left'
+    zeroCount = 'zero-count'
+  }
   return(
     <div className="checkout-item">
       <div className="image-div">
@@ -12,8 +17,8 @@ const PetInCheckout = ({item, removeItem, addItem, removeAndDecreaseCount}) => {
       </div>
     <span className="name">{name}</span>
     <span className="quantity">
-      <div className="arrow" onClick={() => removeAndDecreaseCount(item)}>&#10094;</div>
-      <span className="value">{count}</span>
+      <div className={`arrow ${arrowLeft}`} onClick={() => removeAndDecreaseCount(item)}>&#10094;</div>
+      <span className={`value ${zeroCount}`}>{count}</span>
       <div className="arrow" onClick={() => addItem(item)}>&#10095;</div>  
     </span>
     <span className="price">{price}</span>

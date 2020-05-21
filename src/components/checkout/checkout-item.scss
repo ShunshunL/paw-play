@@ -33,6 +33,15 @@
     .value {
       margin: 0 7px;
     }
+
+    .zero-count {
+      color: rgb(255, 6, 6);
+      margin: 0 10px;
+    }
+
+    .arrow-left {
+      display: none;
+    }
   }
 
   .remove-btn {
