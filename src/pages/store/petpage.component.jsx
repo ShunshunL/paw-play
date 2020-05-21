@@ -1,27 +1,21 @@
-import React, {Component} from 'react';
-import SHOP_DATA from './shop.data';
+import React from 'react';
+import {connect} from 'react-redux'
+import {createStructuredSelector} from 'reselect'
 import Preview from '../../components/preview/preview.component'
+import {selectPets} from '../../redux/pets/pets-selector'
 
-class PetPage extends Component {
-   constructor(props) {
-     super(props);
+const PetPage = ({collections}) => (
+  <div className="pet-page">
+    {
+      collections.map(({id, ...collectionProps}) => (
+      <Preview key={id} {...collectionProps} />
+      ))
+    }
+  </div>
+)
 
-     this.state = {
-       collections: SHOP_DATA
-     }
-   }
+const mapStateToProps = createStructuredSelector({
+  collections: selectPets
+})
 
-   render() {
-     const {collections} = this.state;
-     return (<div className="pet-page">
-       {
-         collections.map(({id, ...collectionProps}) => (
-          <Preview key={id} {...collectionProps} />
-         ))
-       }
-     </div>
-     )
-   }
-}
-
-export default PetPage
+export default connect(mapStateToProps)(PetPage)

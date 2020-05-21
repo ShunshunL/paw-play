@@ -1,6 +1,4 @@
-/* Used as starting data for ShopPage */
-
-const SHOP_DATA = [
+const PETS_DATA = [
   {
     id: 1,
     title: 'Pugs',
@@ -248,4 +246,4 @@ const SHOP_DATA = [
   }
 ];
 
-export default SHOP_DATA;
+export default PETS_DATA;
