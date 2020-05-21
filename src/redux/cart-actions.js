@@ -8,3 +8,8 @@ export const addItem = item => ({
   type: CardTypes.ADD_ITEM,
   payload: item 
 })
+
+export const removeItem = item => ({
+  type: CardTypes.REMOVE_ITEM,
+  payload: item 
+})
