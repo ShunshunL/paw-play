@@ -5,7 +5,6 @@ import { selectCategory } from '../../redux/pets/pets-selector'
 import './category.scss'
 
 const CategoryPage = ({collection}) => {
-  console.log(collection)
   const {title, items} = collection
   return (
   <div className="category">
