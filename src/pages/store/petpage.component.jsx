@@ -1,21 +1,13 @@
 import React from 'react';
-import {connect} from 'react-redux'
-import {createStructuredSelector} from 'reselect'
-import Preview from '../../components/preview/preview.component'
-import {selectPets} from '../../redux/pets/pets-selector'
+import { Route } from 'react-router-dom'
+import Collections from '../../components/collections/collections'
+import CategoryPage from '../../pages/category/category'
 
-const PetPage = ({collections}) => (
+const PetPage = ({ match }) => (
   <div className="pet-page">
-    {
-      collections.map(({id, ...collectionProps}) => (
-      <Preview key={id} {...collectionProps} />
-      ))
-    }
+    <Route exact path={`${match.path}`} component={Collections} />
+    <Route path={`${match.path}/:categoryId`} component={CategoryPage} />
   </div>
 )
 
-const mapStateToProps = createStructuredSelector({
-  collections: selectPets
-})
-
-export default connect(mapStateToProps)(PetPage)
+export default PetPage
