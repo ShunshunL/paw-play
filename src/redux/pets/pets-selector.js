@@ -1,13 +1,5 @@
 import { createSelector } from 'reselect'
 
-const COLLECTION_ID_MAP = {
-  'pugs': 1,
-  'boston-terriers': 2,
-  'dogs': 3,
-  'cats': 4,
-  'funny-cats': 5
-}
-
 const selectShop = state => state.pets
 
 export const selectPets = createSelector(
@@ -15,7 +7,12 @@ export const selectPets = createSelector(
   pet => pet.collections
 )
 
+export const selectCollectionSample = createSelector(
+  selectPets,
+  collections => Object.keys(collections).map(key => collections[key])
+)
+
 export const selectCategory = collectionUrlParam => createSelector(
   selectPets,
-  collections => collections.find(collection => collection.id === COLLECTION_ID_MAP[collectionUrlParam])
+  collections => collections[collectionUrlParam]
 )

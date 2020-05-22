@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import Preview from '../../components/preview/preview.component'
-import {selectPets} from '../../redux/pets/pets-selector'
+import {selectCollectionSample} from '../../redux/pets/pets-selector'
 import './collections.scss'
 
 const Collections = ({collections}) => (
@@ -16,7 +16,7 @@ const Collections = ({collections}) => (
 )
 
 const mapStateToProps = createStructuredSelector({
-  collections: selectPets
+  collections: selectCollectionSample
 })
 
 export default connect(mapStateToProps)(Collections)

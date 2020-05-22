@@ -1,5 +1,5 @@
-const PETS_DATA = [
-  {
+const PETS_DATA = {
+  'pugs': {
     id: 1,
     title: 'Pugs',
     routeName: 'pugs',
@@ -60,7 +60,7 @@ const PETS_DATA = [
       }
     ]
   },
-  {
+  'boston-terriers': {
     id: 2,
     title: 'Boston Terriers',
     routeName: 'boston-terriers',
@@ -115,7 +115,7 @@ const PETS_DATA = [
       }
     ]
   },
-  {
+  'dogs': {
     id: 3,
     title: 'Dogs',
     routeName: 'dogs',
@@ -152,7 +152,7 @@ const PETS_DATA = [
       }
     ]
   },
-  {
+  'cats': {
     id: 4,
     title: 'Cats',
     routeName: 'cats',
@@ -201,7 +201,7 @@ const PETS_DATA = [
       }
     ]
   },
-  {
+  'funny-cats': {
     id: 5,
     title: 'Funny Cats',
     routeName: 'funny-cats',
@@ -244,6 +244,6 @@ const PETS_DATA = [
       }
     ]
   }
-];
+};
 
 export default PETS_DATA;
